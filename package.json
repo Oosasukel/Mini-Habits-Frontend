@@ -5,7 +5,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "test": "jest",
+    "lint": "eslint --ext .ts,.tsx src",
+    "prettier:write": "prettier --write src",
+    "prettier:check": "prettier --check src"
   },
   "dependencies": {
     "next": "10.1.3",
