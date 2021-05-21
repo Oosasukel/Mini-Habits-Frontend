@@ -1,11 +1,11 @@
-import { Container, Title, Text } from '../../styles/404/styles';
+import styles from './styles.module.scss';
 
 const NotFound = () => {
   return (
-    <Container>
-      <Text>OPS...</Text>
-      <Title>Página não encontrada :(</Title>
-    </Container>
+    <div>
+      <h1 className={styles.title}>OPS...</h1>
+      <h2>Página não encontrada :(</h2>
+    </div>
   );
 };
 
