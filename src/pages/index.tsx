@@ -1,10 +1,10 @@
-import { Container, Title } from '../styles/home/styles';
+import styles from './home.module.scss';
 
 const Home = () => {
   return (
-    <Container>
-      <Title>Home</Title>
-    </Container>
+    <div>
+      <h1 className={styles.title}>Home</h1>
+    </div>
   );
 };
 
