@@ -14,11 +14,11 @@
     margin-bottom: 3rem;
 
     > * {
-      width: 11rem !important;
+      width: 9.5rem !important;
       height: auto !important;
 
       @media (min-width: 48rem) {
-        width: 19rem !important;
+        width: 16rem !important;
       }
     }
   }
@@ -32,6 +32,17 @@
 
     @media (min-width: 48rem) {
       font-size: 2rem;
+    }
+  }
+
+  p {
+    color: $color-oslo-gray;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+
+    @media (min-width: 48rem) {
+      font-size: 1.5rem;
     }
   }
 }

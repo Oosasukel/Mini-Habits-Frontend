@@ -11,27 +11,14 @@
 
   .animationContainer {
     display: flex;
-    margin-bottom: 3rem;
 
     > * {
-      width: 11rem !important;
+      width: 9.5rem !important;
       height: auto !important;
 
       @media (min-width: 48rem) {
-        width: 19rem !important;
+        width: 16rem !important;
       }
-    }
-  }
-
-  h1 {
-    color: $color-pickled-bluewood;
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    text-align: center;
-
-    @media (min-width: 48rem) {
-      font-size: 2rem;
     }
   }
 }
