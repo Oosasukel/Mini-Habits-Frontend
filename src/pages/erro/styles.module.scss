@@ -14,17 +14,21 @@
     margin-bottom: 3rem;
 
     > * {
-      width: 11rem !important;
+      width: 9.5rem !important;
       height: auto !important;
 
+      path {
+        fill: $color-cabaret;
+      }
+
       @media (min-width: 48rem) {
-        width: 19rem !important;
+        width: 16rem !important;
       }
     }
   }
 
   h1 {
-    color: $color-pickled-bluewood;
+    color: $color-cabaret;
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 1rem;
