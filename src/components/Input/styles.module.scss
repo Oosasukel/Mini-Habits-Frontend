@@ -1,0 +1,58 @@
+.container {
+  width: 100%;
+
+  p {
+    width: 100%;
+    align-items: left;
+    color: #848586;
+    font-size: 14px;
+
+    &.active {
+      color: #24ceac;
+    }
+  }
+
+  .inputContainer {
+    position: relative;
+    width: 100%;
+    margin-bottom: 16px;
+
+    input {
+      height: 48px;
+      width: 100%;
+
+      border-radius: 8px;
+
+      border: 2px solid #848586;
+      padding: 12px 16px;
+      font-weight: 700;
+      outline: none;
+      padding-right: 56px;
+
+      &:focus {
+        border: 2px solid #24ceac;
+
+        & + .icon {
+          path {
+            fill: #24ceac;
+          }
+        }
+      }
+    }
+
+    .icon {
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      margin-right: 16px;
+      transform: translateY(-50%);
+      cursor: pointer;
+
+      path {
+        fill: #848586;
+      }
+    }
+  }
+}
