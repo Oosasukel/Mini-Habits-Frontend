@@ -1,0 +1,49 @@
+@import '../../../../styles/theme/colors.scss';
+
+.container {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 2rem;
+  padding-top: 4rem;
+
+  .content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    @media (min-width: 48rem) {
+      width: 22.5rem;
+    }
+
+    .animationContainer {
+      margin-bottom: 3rem;
+      width: 9.5rem !important;
+
+      @media (min-width: 48rem) {
+        width: 17rem !important;
+      }
+    }
+
+    h1 {
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: $color-pickled-bluewood;
+      margin-bottom: 2rem;
+      text-align: center;
+
+      @media (min-width: 48rem) {
+        font-size: 2rem;
+      }
+    }
+
+    .error {
+      font-weight: bold;
+      color: $color-cabaret;
+      text-align: center;
+    }
+  }
+}
