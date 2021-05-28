@@ -1,0 +1,41 @@
+@import '../../styles/theme/colors.scss';
+
+.container {
+  background-color: $color-white;
+  height: 100%;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .animationContainer {
+    display: flex;
+    margin-bottom: 3rem;
+
+    > * {
+      width: 9.5rem !important;
+      height: auto !important;
+
+      path {
+        fill: $color-cabaret;
+      }
+
+      @media (min-width: 48rem) {
+        width: 16rem !important;
+      }
+    }
+  }
+
+  h1 {
+    color: $color-cabaret;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+
+    @media (min-width: 48rem) {
+      font-size: 2rem;
+    }
+  }
+}
