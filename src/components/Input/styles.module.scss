@@ -1,58 +1,85 @@
+@import '../../styles/theme/colors.scss';
+
 .container {
+  display: inline-block;
   width: 100%;
 
-  p {
+  .label {
     width: 100%;
     align-items: left;
-    color: #848586;
-    font-size: 14px;
+    font-weight: bold;
+    color: $color-oslo-gray;
+    font-size: 0.875rem;
 
-    &.active {
-      color: #24ceac;
-    }
-  }
+    &.error {
+      color: $color-cabaret;
 
-  .inputContainer {
-    position: relative;
-    width: 100%;
-    margin-bottom: 16px;
+      .inputContainer {
+        input {
+          border: 0.125rem solid $color-cabaret;
+        }
 
-    input {
-      height: 48px;
-      width: 100%;
-
-      border-radius: 8px;
-
-      border: 2px solid #848586;
-      padding: 12px 16px;
-      font-weight: 700;
-      outline: none;
-      padding-right: 56px;
-
-      &:focus {
-        border: 2px solid #24ceac;
-
-        & + .icon {
+        .icon {
           path {
-            fill: #24ceac;
+            fill: $color-cabaret;
           }
         }
       }
     }
 
-    .icon {
-      width: 24px;
-      height: 24px;
-      position: absolute;
-      right: 0;
-      top: 50%;
-      margin-right: 16px;
-      transform: translateY(-50%);
-      cursor: pointer;
+    &.active {
+      color: $color-primary;
 
-      path {
-        fill: #848586;
+      .inputContainer {
+        input {
+          border: 0.125rem solid $color-primary;
+        }
+
+        .icon {
+          path {
+            fill: $color-primary;
+          }
+        }
       }
     }
+
+    .inputContainer {
+      position: relative;
+      width: 100%;
+
+      input {
+        height: 3rem;
+        width: 100%;
+
+        border-radius: 0.5rem;
+
+        border: 0.125rem solid $color-oslo-gray;
+        padding: 0.75rem 1rem;
+        font-weight: 700;
+        outline: none;
+        padding-right: 3.5rem;
+      }
+
+      .icon {
+        width: 1.5rem;
+        height: 1.5rem;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-right: 1rem;
+        transform: translateY(-50%);
+        cursor: pointer;
+
+        path {
+          fill: $color-oslo-gray;
+        }
+      }
+    }
+  }
+
+  .errorLabel {
+    font-size: 0.875rem;
+    color: $color-cabaret;
+    font-weight: bold;
   }
 }
